@@ -124,6 +124,16 @@ body {
   content: none;
 }
 
+.contact-list a {
+  color: var(--text-light);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-list a:hover {
+  color: var(--gold-light);
+}
+
 .icon {
   display: inline-flex;
   align-items: center;
