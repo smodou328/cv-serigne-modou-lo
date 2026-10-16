@@ -12,6 +12,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 body {
@@ -278,24 +280,21 @@ body {
 }
 
 @media print {
-  body {
-    background: #fff;
-    padding: 0;
-  }
-  .cv-container {
-    box-shadow: none;
-    max-width: 100%;
-  }
-}
-@media print {
   @page {
     size: A4;
     margin: 0;
   }
 
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   body {
     background: #fff;
     padding: 0;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   .cv-container {
@@ -303,12 +302,15 @@ body {
     max-width: 100%;
     width: 210mm;
     min-height: 297mm;
-    height: 297mm;
     grid-template-columns: 75mm 1fr;
   }
 
   .sidebar {
     padding: 8mm 6mm;
+    background: var(--navy) !important;
+    color: var(--text-light) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   .content {
@@ -319,6 +321,13 @@ body {
     width: 130px;
     height: 130px;
     margin-bottom: 16px;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .round-icon {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   .side-section {
