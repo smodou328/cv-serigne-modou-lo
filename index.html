@@ -3,13 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV - Serigne Modou Lo</title>
+<meta name="description" content="CV de Serigne Modou Lo — Étudiant en Génie Logiciel & Développeur Web. Compétences en Laravel, React, Django, Python et Conception Logicielle.">
+<title>CV - Serigne Modou Lo | Développeur Web & Génie Logiciel</title>
+<!-- Google Fonts cohérentes avec le Portfolio (Plus Jakarta Sans & Poppins) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<!-- Boxicons CDN (compatibilité portfolio) -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<div class="no-print action-bar">
+  <a href="CV_Serigne_Modou_LO.pdf" download="CV_Serigne_Modou_LO.pdf" class="btn btn-download" title="Télécharger le fichier PDF">
+    <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    <span>Télécharger en PDF</span>
+  </a>
+</div>
+
 <div class="cv-container">
 
+  <!-- ================= COLONNE DE GAUCHE (SIDEBAR) ================= -->
   <aside class="sidebar">
 
     <div class="photo-wrapper">
@@ -17,19 +32,81 @@
       <span class="initials">SML</span>
     </div>
 
+    <!-- Section Contact -->
     <section class="side-section">
-      <h2><span class="icon">☎</span> CONTACT</h2>
+      <h2>
+        <span class="icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path><path d="M6 16c0-2 2-3 4-3s4 1 4 3"></path><line x1="15" y1="9" x2="19" y2="9"></line><line x1="15" y1="13" x2="19" y2="13"></line></svg>
+        </span>
+        CONTACT
+      </h2>
       <ul class="contact-list">
-        <li><span class="icon">📞</span> 76 328 79 64</li>
-        <li><span class="icon">✉</span> lo065657@gmail.com</li>
-        <li><span class="icon">📍</span> Touba, Sénégal</li>
-        <li><span class="icon">in</span> <a href="https://www.linkedin.com/in/serigne-modou-lo-a59762390" target="_blank" rel="noopener">serigne-modou-lo</a></li>
-        <li><span class="icon">⌥</span> <a href="https://github.com/smodou328" target="_blank" rel="noopener">smodou328</a></li>
+        <li>
+          <span class="icon">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </span>
+          <a href="tel:+221763287964">76 328 79 64</a>
+        </li>
+        <li>
+          <span class="icon">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          </span>
+          <a href="mailto:lo065657@gmail.com">lo065657@gmail.com</a>
+        </li>
+        <li>
+          <span class="icon">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </span>
+          <span>Touba, Sénégal</span>
+        </li>
+        <li>
+          <span class="icon">
+            <svg class="fill-current" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </span>
+          <a href="https://www.linkedin.com/in/serigne-modou-lo-a59762390" target="_blank" rel="noopener">linkedin.com/in/serigne-modou-lo</a>
+        </li>
+        <li>
+          <span class="icon">
+            <svg class="fill-current" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+          </span>
+          <a href="https://github.com/smodou328" target="_blank" rel="noopener">github.com/smodou328</a>
+        </li>
+        <li>
+          <span class="icon">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+          </span>
+          <a href="https://smodou328.github.io/portfolio/" target="_blank" rel="noopener">smodou328.github.io/portfolio</a>
+        </li>
       </ul>
     </section>
 
+    <!-- Section Qualités & Atouts (Fusionnée & déplacée dans la colonne de gauche) -->
     <section class="side-section">
-      <h2><span class="icon">⚙</span> COMPÉTENCES CLÉS</h2>
+      <h2>
+        <span class="icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        </span>
+        QUALITÉS &amp; ATOUTS
+      </h2>
+      <ul class="soft-skills-list">
+        <li>Rigueur &amp; sens du détail</li>
+        <li>Sens de l'analyse &amp; résolution de problèmes</li>
+        <li>Autonomie &amp; esprit d'initiative</li>
+        <li>Adaptabilité &amp; apprentissage rapide</li>
+        <li>Esprit d'équipe &amp; dynamisme</li>
+        <li>Organisation &amp; sens des responsabilités</li>
+        <li>Passion pour le développement logiciel</li>
+      </ul>
+    </section>
+
+    <!-- Section Compétences Clés -->
+    <section class="side-section">
+      <h2>
+        <span class="icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        </span>
+        COMPÉTENCES CLÉS
+      </h2>
 
       <h3>DÉVELOPPEMENT WEB</h3>
       <ul>
@@ -64,8 +141,14 @@
       </ul>
     </section>
 
+    <!-- Section Langues -->
     <section class="side-section">
-      <h2><span class="icon">♥</span> LANGUES</h2>
+      <h2>
+        <span class="icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+        </span>
+        LANGUES
+      </h2>
       <ul>
         <li>Français : Courant</li>
         <li>Anglais : Intermédiaire</li>
@@ -73,8 +156,14 @@
       </ul>
     </section>
 
+    <!-- Section Centres d'Intérêt -->
     <section class="side-section">
-      <h2><span class="icon">♥</span> CENTRES D'INTÉRÊT</h2>
+      <h2>
+        <span class="icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+        </span>
+        CENTRES D'INTÉRÊT
+      </h2>
       <ul>
         <li>Génie Logiciel</li>
         <li>Développement Web</li>
@@ -87,6 +176,7 @@
 
   </aside>
 
+  <!-- ================= COLONNE DE DROITE (CONTENU PRINCIPAL) ================= -->
   <main class="content">
 
     <header class="header">
@@ -94,8 +184,14 @@
       <p class="subtitle">ÉTUDIANT EN GÉNIE LOGICIEL | DÉVELOPPEUR WEB | PROGRAMMATION</p>
     </header>
 
+    <!-- Section Profil -->
     <section class="main-section">
-      <h2><span class="round-icon">👤</span> PROFIL</h2>
+      <h2>
+        <span class="round-icon">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </span>
+        PROFIL
+      </h2>
       <p>
         Étudiant en troisième année de Licence en Génie Logiciel à l'Université Iba Der Thiam de Thiès,
         passionné par le développement logiciel, les technologies web et les bases de données. Sérieux,
@@ -105,12 +201,20 @@
       </p>
     </section>
 
+    <!-- Section Expérience / Projets -->
     <section class="main-section">
-      <h2><span class="round-icon">💼</span> EXPÉRIENCE / PROJETS</h2>
+      <h2>
+        <span class="round-icon">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+        </span>
+        EXPÉRIENCE / PROJETS
+      </h2>
 
       <div class="entry">
-        <h3>STAGIAIRE DÉVELOPPEUR WEB — ÉCOLES AU SÉNÉGAL</h3>
-        <p class="school">10 Août 2026 – 10 Novembre 2026</p>
+        <div class="entry-header">
+          <h3>STAGIAIRE DÉVELOPPEUR WEB — ÉCOLES AU SÉNÉGAL</h3>
+          <span class="entry-date">10 Août 2026 – 10 Novembre 2026</span>
+        </div>
         <ul>
           <li>Participation au développement et à la maintenance des applications et plateformes web.</li>
           <li>Intégration d'interfaces utilisateur responsives et développement de nouvelles fonctionnalités.</li>
@@ -120,16 +224,21 @@
       </div>
 
       <div class="entry">
-        <h3>APPLICATION TEWNA — ÉCOLES AU SÉNÉGAL</h3>
+        <h3><strong>APPLICATION TEWNA</strong> — ÉCOLES AU SÉNÉGAL</h3>
+        <p class="tech-stack">Technologies : <strong>Laravel</strong>, <strong>React</strong>, <strong>API REST</strong></p>
         <ul>
-          <li>Développement de Tewna, application de pointage d'Écoles au Sénégal, avec Laravel et React.</li>
+          <li>Développement de l'application de pointage <strong>Tewna</strong> pour la gestion automatisée des présences.</li>
+          <li>Conception de l'architecture backend et développement d'<strong>API REST</strong> avec <strong>Laravel</strong>.</li>
+          <li>Intégration de l'interface utilisateur dynamique et responsive avec <strong>React</strong>.</li>
         </ul>
       </div>
 
       <div class="entry">
-        <h3>KAAY JANG — ÉCOLES AU SÉNÉGAL (EN COURS)</h3>
+        <h3><strong>KAAY JANG</strong> — ÉCOLES AU SÉNÉGAL (EN COURS)</h3>
+        <p class="tech-stack">Technologies : <strong>Laravel</strong>, <strong>React</strong>, <strong>API REST</strong></p>
         <ul>
-          <li>Participation au développement et à l'amélioration de Kaay Jang, plateforme éducative qui constitue la nouvelle version d'Écoles au Sénégal.</li>
+          <li>Participation active au développement de <strong>Kaay Jang</strong>, plateforme éducative nouvelle version d'Écoles au Sénégal.</li>
+          <li>Développement full-stack avec <strong>Laravel</strong>, <strong>React</strong> et intégration d'<strong>API REST</strong>.</li>
           <li>Contribution à la mise en place d'espaces dédiés aux élèves, aux enseignants et aux équipes administratives.</li>
         </ul>
       </div>
@@ -164,16 +273,22 @@
       </div>
     </section>
 
+    <!-- Section Formation -->
     <section class="main-section">
-      <h2><span class="round-icon">🎓</span> FORMATION</h2>
+      <h2>
+        <span class="round-icon">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+        </span>
+        FORMATION
+      </h2>
 
       <div class="entry">
         <h3>LICENCE INFORMATIQUE – OPTION GÉNIE LOGICIEL</h3>
         <p class="school">Université Iba Der Thiam de Thiès</p>
         <ul class="plain">
-          <li>2025 – 2026 : Licence 3 Génie Logiciel —Laravel,Python,Django</li>
-          <li>2024 – 2025 : Licence 2 Informatique —Java,Base de Données </li>
-          <li>2023 – 2024 : Licence 1 Informatique — Html5,Css,Java Script,Langage C </li>
+          <li><strong>2025 – 2026 :</strong> Licence 3 Génie Logiciel — Laravel, Python, Django</li>
+          <li><strong>2024 – 2025 :</strong> Licence 2 Informatique — Java, Bases de Données</li>
+          <li><strong>2023 – 2024 :</strong> Licence 1 Informatique — HTML5, CSS3, JavaScript, Langage C</li>
         </ul>
       </div>
 
@@ -181,46 +296,62 @@
         <h3>BACCALAURÉAT SCIENTIFIQUE</h3>
         <p class="school">GSCAB</p>
         <ul class="plain">
-          <li>2023</li>
+          <li><strong>2023</strong></li>
         </ul>
       </div>
     </section>
 
-    <div class="two-col">
-      <section class="main-section half">
-        <h2><span class="round-icon">👤</span> QUALITÉS</h2>
-        <ul>
-          <li>Organisé</li>
-          <li>Rigoureux</li>
-          <li>Dynamique</li>
-          <li>Esprit d'équipe</li>
-          <li>Curieux</li>
-          <li>Autonome</li>
-          <li>Sens de l'analyse</li>
-          <li>Bonne capacité d'adaptation</li>
-        </ul>
-      </section>
-
-      <section class="main-section half">
-        <h2><span class="round-icon">★</span> ATOUTS</h2>
-        <ul>
-          <li>Passionné par le développement logiciel</li>
-          <li>Apprentissage rapide</li>
-          <li>Sens du détail</li>
-          <li>Esprit d'initiative</li>
-          <li>Motivé à relever de nouveaux défis</li>
-          <li>Bonne capacité de résolution de problèmes</li>
-        </ul>
-      </section>
-    </div>
-
+    <!-- Section Certifications & Qualifications -->
     <section class="main-section">
-      <h2><span class="round-icon">🏅</span> CERTIFICATIONS</h2>
-      <ul>
-        <li>Elements of AI — University of Helsinki &amp; MinnaLearn</li>
-        <li>Python Essentials 1 — Cisco Networking Academy</li>
-        <li>Attestation de fin de stage — Écoles au Sénégal</li>
-        <li>Permis de conduite</li>
+      <h2>
+        <span class="round-icon">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+        </span>
+        CERTIFICATIONS
+      </h2>
+      <ul class="cert-list">
+        <li>
+          <span class="cert-bullet">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </span>
+          <div>
+            <a href="https://www.credly.com/badges/21ee6272-469c-4f35-bf81-b228a73a2136" target="_blank" rel="noopener noreferrer" class="cert-link" title="Vérifier le badge officiel sur Credly">
+              <strong>Python Essentials 1</strong> — Cisco Networking Academy &amp; OpenEDG Python Institute
+              <svg class="cert-ext-icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </li>
+        <li>
+          <span class="cert-bullet">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3m0 14v3M2 12h3m14 0h3"></path></svg>
+          </span>
+          <div>
+            <a href="https://certificates.mooc.fi/validate/m18rqwmogfe" target="_blank" rel="noopener noreferrer" class="cert-link" title="Vérifier le certificat officiel University of Helsinki">
+              <strong>Elements of AI</strong> — University of Helsinki &amp; MinnaLearn (Sorbonne Université)
+              <svg class="cert-ext-icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </li>
+        <li>
+          <span class="cert-bullet">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="9" rx="2"></rect><path d="M5 11l2-5h10l2 5"></path><circle cx="7.5" cy="16.5" r="1.5"></circle><circle cx="16.5" cy="16.5" r="1.5"></circle></svg>
+          </span>
+          <div>
+            <strong>Permis de conduire</strong> — Catégories A1 &amp; B (République du Sénégal)
+          </div>
+        </li>
+        <li>
+          <span class="cert-bullet">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </span>
+          <div>
+            <a href="https://ecolesausenegal.com/" target="_blank" rel="noopener noreferrer" class="cert-link" title="Consulter le site officiel d'Écoles au Sénégal">
+              <strong>Stage Développeur Web</strong> — Écoles au Sénégal
+              <svg class="cert-ext-icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <em>(attestation en attente de délivrance)</em>
+          </div>
+        </li>
       </ul>
     </section>
 
